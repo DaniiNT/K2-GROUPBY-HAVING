@@ -1,8 +1,8 @@
 ___
 # Tabel Pegawai 
-![hasil](../asetbs/pegawai.png)
+![hasil](../asetbsa/pegawai.png)
 # StrukTable
-![image](../asetbs/desc.png)
+![image](../asetbsa/desc.png)
 # Query 1
 ## Contoh Query
 
@@ -10,7 +10,7 @@ ___
 SELECT COUNT(NIP) AS JumlahPegawal, COUNT(Jabatan) AS JumlahJabatan FROM pegawai;
 ```
 ## Hasil
-![hasil](../asetbs/p1.png)
+![hasil](../asetbsa/p1.png)
 ## Analisis 
 - `SELECT` : Untuk memilih kolom apa saja yang ingin dipilih (untuk dihitung)
 - `COUNT(NIP)` : Untuk menghitung jumlah barisan data yang mempunyai isi data dari kolom yang dipilih. `NIP` adalah nama kolom yang dipilih untuk dihitung 
@@ -30,7 +30,7 @@ SELECT COUNT(NIP) AS Jumlah_pegawai
     -> WHERE NoCab = 'C102';
 ```
 ## Hasil
-![image](../asetbs/p2.png)
+![image](../asetbsa/p2.png)
 ## Analisis 
  - Select = untuk memilih kolom mana saja yang ingin dipilih untuk dihitung.
  - COUNT(NIP) = untuk menghitung jumlah barisan data  yang mempunyai data dari kolom yang dipilih.
@@ -50,7 +50,7 @@ SELECT NoCab, COUNT(NIP) AS Jumlah_Pegawai
     -> GROUP BY NoCab;
 ```
 ## Hasil
-![image](../asetbs/p3.png)
+![image](../asetbsa/p3.png)
 ## Analisis 
 - SELECT = untuk memilih kolom mana saja yang ingin dihitung atau ditampilkan.
 - Nocab = merupakan nama kolom yang ingin ditampilkan.
@@ -67,7 +67,7 @@ SELECT NoCab, COUNT(NIP) AS Jumlah_Pegawai
 SELECT Nocab, COUNT(NIP) AS Jumlah_pegawai FROM pegawai GROUP BY NoCab HAVING COUNT(NIP) >= 3;
 ```
 ## Hasil
-![Praktikum](../asetbs/p4.png)
+![Praktikum](../asetbsa/p4.png)
 ## Analisis 
 - SELECT = untuk memilih kolom mana saja yang ingin dihitung atau ditampilkan.
 - Nocab = merupakan nama kolom yang ingin ditampilkan.
@@ -87,7 +87,7 @@ Select SUM(Gaji) AS Total_Gaji
   ->FROM pegawai;
 ```
 ## Hasil
-![](../asetbs/p5.png)
+![](../asetbsa/p5.png)
 ## Analisis
 - SELECT = Untuk memilih kolom mana saja yang dipilih untuk dijumlahkan. 
 - SUM(Gaji) = Untuk menghitung jumlah data (khusus angka) pada kolom yang harus dipilh. Gaji merupakan nama kolom yang dipilih untuk dihitung jumlah isi datanya. 
@@ -102,7 +102,7 @@ Select SUM(Gaji) AS Gaji_Manager FROM pegawai WHERE
 Jabatan = 'Manajer';
 ```
 ## Hasil
-![Hasil](../asetbs/p6.png)
+![Hasil](../asetbsa/p6.png)
 ## Analisis
 - Select= untuk memiliki kolom mana saja yang dipilih untuk digunakan.
 - SUM= untuk menghitung jumlah isi data (khusus angka) pada kolom yang dipilih. gaji yang dipilih untuk dijumlahkan isi datanya.
@@ -120,7 +120,7 @@ Select NoCab, SUM(Gaji) TotalGaji
   ->GROUP BY NoCab;
 ```
 ## Hasil
-![Hasil](../asetbs/p7.png)
+![Hasil](../asetbsa/p7.png)
 ## Analisis
 - SELECT= untuk memilih kolom mana saja yang dipilih untuk ditampilkan atau dijumlahkan.
 - SUM(Gaji)= untuk menghitung jumlah data (khusus angka) pada kolom yang dipilih. Gaji adalah nama kolom yang dipilih untuk dijumlahkan isi datanya.
@@ -136,7 +136,7 @@ Select NoCab, SUM(Gaji) TotalGaji
 SELECT noCab, SUM(Gaji) AS Total_Gaji from pegawai GROUP BY noCab HAVING SUM(Gaji) >= 8000000;
 ```
 ## Hasil
-![hasil](../asetbs/p8.png)
+![hasil](../asetbsa/p8.png)
 ## Analisis
 - select = untuk memilih kolom mana saja yang dipilih untuk di tampilkan atau di jumlah.
 - noCab = nama kolom yang dipilih untuk ditampilkan.
@@ -156,7 +156,7 @@ ___
 SELECT AVG(Gaji) AS rata_rata from pegawai;
 ```
 ## Hasil
-![Hasil](../asetbs/p9.png)
+![Hasil](../asetbsa/p9.png)
 ## Analisis
 - Select = untuk memilih kolom mana data Yang dipilih untuk ditampilkan.
 - AVG (Gaji) = untuk menghitung rata-rata dari data yang ada Pada kolom Yang dipilih. Gaji adalah nama kolom Yang dipilih untuk dihitung rata-ratanya.
@@ -172,7 +172,7 @@ ___
 SELECT AVG(Gaji) AS GajiRataMgr FROM pegawai WHERE Jabatan = 'Manajer';
 ```
 ## Hasil
-![Hasil](../asetbs/p10.png)
+![Hasil](../asetbsa/p10.png)
 ## Analisis
 - SELECT = untuk memilih kolom mana saja yang dipilih untuk ditampilkan.
 - AVG (Gaji) = untuk menghitung rata-rata dari data yang ada pada kolom Yang dipilih. Gaji adalah nama kolom Yang dipilih untuk dihitung rata-ratanya.
@@ -189,7 +189,7 @@ ___
 SELECT nocab, AVG(gaji) AS ratagaji FROM pegawai GROUP BY nocab;
 ```
 ## Hasil
-![hasil](../asetbs/p11.png)
+![hasil](../asetbsa/p11.png)
 ## Analisis 
 - `SELECT` untuk memilih kolom mana saja yang dipilih untuk ditampilkan/dihitung.
 - `nocab` kolom yang dipilih untuk ditampilkan.
@@ -207,7 +207,7 @@ SELECT nocab, AVG(gaji) AS ratagaji FROM pegawai GROUP BY nocab;
 SELECT nocab, AVG(gaji) AS Ratagaji FROM pegawai GROUP BY nocab HAVING nocab = 'C101' OR nocab = 'C102';
 ```
 ## Hasil
-![hasil](../asetbs/p12.png)
+![hasil](../asetbsa/p12.png)
 ## Analisis 
 - `SELECT` untuk memilih kolom mana saja yang dipilih untuk ditampilkan/dihitung.
 - `nocab` kolom yang dipilih untuk ditampilkan.
@@ -226,7 +226,7 @@ SELECT nocab, AVG(gaji) AS Ratagaji FROM pegawai GROUP BY nocab HAVING nocab = '
 SELECT MAX(gaji) AS gajiterbesar, MIN(gaji) AS gajiterkecil FROM pegawai;
 ```
 ## Hasil
-![hasil](../asetbs/p13.png)
+![hasil](../asetbsa/p13.png)
 ## Analisis 
 - `SELECT` untuk memilih kolom mana saja yang dipilih untuk ditampilkan/dihitung.
 - `MAX(gaji)` untuk menampilkan nilai maksimum atau terbesar/tertinggi dari suatu data dalam kolom yang dipilih. Gaji adalah nama kolom yang dipilih.
@@ -244,7 +244,7 @@ FROM pegawai
 WHERE Jabatan = "Manajer";
 ```
 ## Hasil
-![](../asetbs/p14.png)
+![](../asetbsa/p14.png)
 ## Analisis
 - `SELECT`= Untuk memilih kolom nama mana saja yang dipilih untuk ditampilkan l.
 - `MAX(Gaji)`= Untuk menampilkan nilai terbesar dari suatu data dalam kolom yang dipilih. Gaji  adalah nama kolom yang dipilih.
@@ -265,7 +265,7 @@ FROM pegawai
 GROUP BY NoCab;
 ```
 ## Hasil
-![](../asetbs/p15.png)
+![](../asetbsa/p15.png)
 ## Analisis
 - `SELECT`= Untuk memilih kolom nama mana saja yang dipilih untuk ditampilkan.
 - `NoCab`= Nama kolom yang ingin ditampilkan.
@@ -286,7 +286,7 @@ FROM pegawai
 GROUP BY NoCab HAVING COUNT(NIP) >= 3;
 ```
 ## Hasil
-![](../asetbs/p16.png)
+![](../asetbsa/p16.png)
 ## Analisis
 - `SELECT`= Untuk memilih kolom nama mana saja yang dipilih untuk ditampilkan.
 - `NoCab`= Nama kolom yang ingin ditampilkan.
@@ -312,7 +312,7 @@ SELECT COUNT(NIP) AS JumlahPegawai,
     -> FROM pegawai;
 ```
 ## Hasil
-![gambar](../asetbs/p17.png)
+![gambar](../asetbsa/p17.png)
 ## Analisis
 - `Select`= untuk memilih kolom mana saja yang dipilih untuk di tampilkan. 
 - `COUNT(NIP)` = untuk menghitung jumlah barisan data yang ada pada kolom yang dipilih. 
@@ -342,7 +342,7 @@ ___
     -> HAVING SUM(Gaji) <= 2600000;
 ```
 ## Hasil 
-![gambar](../asetbs/p18.png)
+![gambar](../asetbsa/p18.png)
 ## Analisis
 - `Select`= untuk memilih kolom mana saja yang ingin digunakan. 
 - `COUNT(NIP)`= untuk menghitung barisan data yang ada pada kolom yang dipilih. 
@@ -379,7 +379,7 @@ FROM mobil GROUP BY warna;
 ```
 ### Hasil
 
-![Gambar1](../asetbs/by1.png)
+![Gambar1](../asetbsa/by1.png)
 ___
 ### Analisis 
 `SELECT warna` nama kolom yang akan diambil dari tabel `mobil`.`COUNT(id_mobil) AS jumlah_warna`,`COUNT` digunakan untuk menghitung jumlah baris oleh `GROUP BY`. Di sini, `COUNT(id_mobil)` menghitung jumlah mobil untuk setiap warna,`jumlah_warna`.`FROM mobil` ini adalah nama tabel yang akan digunakan.`GROUP BY warna; `digunakan untuk mengelompokkan hasil query berdasarkan nilai dalam kolom warna.  semua baris yang memiliki warna yang sama akan dikelompokkan, dan`COUNT(id_mobil)` akan dihitung.
@@ -397,7 +397,7 @@ select pemilik,COUNT(id_mobil) AS jumlah_mobil from mobil GROUP BY pemilik HAVIN
 ```
 ### Hasil
 
-![gambar2](../asetbs/by2.png)
+![gambar2](../asetbsa/by2.png)
 ___
 ### Analisis 
 `select pemilik` adalah nama kolomnya yang digunakan,`count(id_mobil)` digunakan untuk menghitung jumlah baris yang memiliki nilai pada kolom `id_mobil`.`AS jumlah_mobil` Alias yang memberikan untuk nama sementara pada hasil dari `count(id_mobil)` jadi hasilnya akan diberi nama `jumlah_mobil`.`from mobil` adalah nama tabelnya.`GROUP BY pemilik` kolom yang digunakan untuk di kelompokkan.`HAVING COUNT(id_mobil) >= 3` ,`HAVING` digunakan untuk menetapkan kondisi pada hasil pengelompokan `GROUP BY`.`(id_mobil) >= 3` Kondisi yang harus dipenuh. Hanya grup dengan jumlah `id_mobil` yang dihitung lebih besar atau sama dengan 3 yang akan ditampilkan dalam hasil akhir.
@@ -416,7 +416,7 @@ FROM mobil GROUP BY pemilik;
 ```
 ### Hasil
 
-![gambar3](../asetbs/by3.png)
+![gambar3](../asetbsa/by3.png)
 ___
 ### Analisis 
 `SELECT pemilik` ini adalah nama kolomnya,`count(id_mobil)`digunakan untuk menghitung jumlah baris dalam kolom `id_mobil` untuk setiap grup. Fungsi ini menghitung berapa banyak mobil yang dimiliki oleh setiap `pemilik`.`AS jumlah_mobil` memberikan nama sementara pada hasil dari `COUNT(id_mobil)`, sehingga hasilnya akan diberi nama `JUMLAH_MOBIL`.`FROM mobil` ini adalah nama tabelnya.`GROUP BY pemilik` digunakan untuk mengelompokkan hasil query satu atau lebih kolom `pemilik`.
@@ -436,7 +436,7 @@ FROM mobil GROUP BY pemilik;
 ```
 ### Hasil
 
-![gambar4](../asetbs/by4.png)
+![gambar4](../asetbsa/by4.png)
 ___
 ### Analisis 
 `Select pemilik` ini adalah nama kolomnya,`SUM(harga_rental)` digunakan untuk menghitung total nilai dari kolom `harga_rental` untuk setiap grup `pemilik`.`AS total_pendapatan` memberikan nama sementara pada hasil dari `SUM(harga_rental)`, sehingga hasilnya akan diberi nama `total_pendapatan`.`FROM mobil` adalah nama tabelnya,`GROUP BY pemilik` memastikan bahwa hasil query dikelompokkan berdasarkan pemilik mobil, sehingga setiap baris hasil akan menunjukkan pemilik serta total pendapatan rental mereka.
@@ -457,7 +457,7 @@ HAVING SUM(harga_rental) >= 300000;
 ```
 ### Hasil
 
-![gambar5](../asetbs/by5.png)
+![gambar5](../asetbsa/by5.png)
 ___
 ### Analisis 
 `SELECT pemilik` nama kolom yang akan di gunakan,`SUM(harga_rental)` digunakan untuk menghitung total nilai dari kolom `harga_rental` untuk setiap grup pemilik. Fungsi ini menjumlahkan pendapatan dari rental mobil untuk setiap pemilik.`AS total_pemasukan` memberikan nama sementara pada hasil dari `SUM(harga_rental)`, sehingga hasilnya akan diberi nama `total_pemasukan`.`From mobil` ini adalah nama tabelnya.`GROUP BY pemilik` pengelompokan Setiap nilai unik di kolom pemilik akan membentuk satu grup.`HAVING SUM(harga_rental) >= 300000` Mengelompokkan data berdasarkan kolom pemilik, sehingga setiap pemilik membentuk satu grup serta,menyertakan pemilik yang memiliki total pendapatan dari rental mobil sebesar `300,000` atau lebih.
@@ -476,7 +476,7 @@ FROM mobil GROUP BY pemilik;
 ```
 ### Hasil
 
-![gambar6](../asetbs/by6.png)
+![gambar6](../asetbsa/by6.png)
 ___
 ### Analisis 
 `SELECT pemilik` nama kolomnya,`AVG(harga_rental)` menghitung nilai rata-rata dari kolom harga_rental untuk setiap kolom pemilik.`AS total_pemasukan` memberikan nama sementara pada hasil dari `AVG(harga_rental)`, sehingga hasilnya akan diberi nama `rata_rata_pendapatan`.`from mobil` nama tabelnya,`GROUP BY pemilik` `GROUP BY` digunakan untuk mengelompokkan data berdasarkan kolom `pemilik`. Setiap nilai unik di kolom pemilik akan membentuk satu grup.
@@ -499,7 +499,7 @@ HAVING COUNT(id_mobil) > 1;
 ```
 ### Hasil
 
-![gambar7](../asetbs/by7.png)
+![gambar7](../asetbsa/by7.png)
 ### Analisis 
 `SELECT pemilik` nama kolomnya,`max(harga_rental)` menghitung pendapatan terbesar dari rental mobil untuk setiap pemilik.`AS pemasukan_terbesar` memberikan nama sementara pada hasil dari `MAX(harga_rental)`,`MIN(harga_rental)` 
 ### kesimpulan 
