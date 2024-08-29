@@ -1,9 +1,13 @@
+
+# Tabel Keaktifan
+
 | No  | Nama                | Score Keaktifan | Peran           |
 | --- | ------------------- | --------------- | --------------- |
-| 1   | Nur Rahmat Ramadan  | 3               | Pembuaat PPT    |
+| 1   | Nur Rahmat Ramadan  | 3               | Pembuat PPT     |
 | 2   | Ahmad Anugrah Satya | 3               | Pembuat Soal    |
 | 3   | Muh Ardiansyah      | 3               | Penyemangat     |
 | 4   | Rihan Juli Saputra  | 3               | Penyemangat 2.0 |
+
 ___
 # Tabel Pegawai 
 ![hasil](/asetbsa/pegawai.png)
